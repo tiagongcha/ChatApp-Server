@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webchat</title>
+	<script type="text/javascript" src="webChat.js"></script>
+	<link rel="stylesheet" type="text/css" href="webChat.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<body>
+	<div id="register">
+
+		<div id="form">
+			<p id="login">LOGIN</p>
+			<!-- username and room box -->
+			<label>Username: </label>
+			<br>
+			<input type="text" name="username" id="username" placeholder="user name">
+			<br>
+			<label>Name of Room: </label>
+			<br>
+			<input type="text" name="roomName" id="roomname" placeholder="room name">
+			<br>
+			<button id="buttonJoin" onclick="joinServer()">JOIN</button>
+		</div>
+
+		<div id="cuteImg">
+			<img src="cutie.gif">		
+		</div>
+		
+	</div>
+
+
+	<div id="chatroom" class="hiddenChatroom">
+		<!-- chatroom interfact -->
+		<div id="chatmsg">
+			<label>Chat Message: </label>
+			<br>
+			<input type="text" name="message" id="chatmessage" placeholder="say something....">
+			<br>
+			<button id="buttonSend" onclick="sendMsg()">
+				SEND
+			</button>
+		</div>
+
+
+		<!-- chat msg interface -->
+		<div id = "messageDisplay">
+			<img src="calm.jpg" id="calmimg">
+		
+		
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
