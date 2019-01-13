@@ -13,21 +13,25 @@ import java.lang.*;
 
 public class MyServer {
 
+	/**
+	 * this variable keeps track of all the rooms that has been create since we do
+	 * not want duplicate room, the existing rooms are store in a HashMap
+	 */
 	private static HashMap<String, Room> chatRooms = new HashMap<String, Room>();
 
 	public static void main(String[] args) throws IOException {
-		
-		//create the server socket connection:
+
+		// create the server socket channel connection:
 		ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
 		serverSocketChannel.socket().bind(new InetSocketAddress(8080));
 		System.out.println("socket created on port 8080");
 		serverSocketChannel.configureBlocking(true);
 
 		while (true) {
-			//create the client socket connection:
+			// create the client socket connection:
 			SocketChannel clientSocketChannel = serverSocketChannel.accept();
 
-			//make a new thread every time 
+			// make a new thread every time
 			Thread th = new Thread(new Runnable() {
 
 				public void run() {

@@ -1,0 +1,2 @@
+2019-01-12 22:39:06,361 [Worker-0: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-01-13 13:58:10,349 [Worker-3: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

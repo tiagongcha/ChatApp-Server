@@ -77,3 +77,261 @@ Caused by: java.lang.ClassNotFoundException: javax.annotation.PreDestroy cannot 
 	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:161)
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
 	... 21 more
+!SESSION 2019-01-12 22:38:25.659 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/gongtia/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/gongtia/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-01-12 22:39:01.341
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2019-01-12 22:39:02.431
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-12 22:39:02.431
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4eace42b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f87a7c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:36.140
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.060
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FPmwmJjP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.061
+!MESSAGE subscribing to classpath changes: sts4.classpath.FPmwmJjP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.062
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.063
+!MESSAGE subsribers = [sts4.classpath.FPmwmJjP]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.064
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.066
+!MESSAGE project src ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.067
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.067
+!MESSAGE Preparing classpath changed notification src
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.067
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.FPmwmJjP => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.068
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.070
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.071
+!MESSAGE executing callback sts4.classpath.FPmwmJjP src false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-12 22:39:45.467
+!MESSAGE executing callback sts4.classpath.FPmwmJjP SUCCESS [done]
+
+!ENTRY org.eclipse.ui 4 0 2019-01-13 13:49:46.498
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4905)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4292)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1516)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:808)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6066)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:80)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:270)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4193)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3726)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:58)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 61 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:57:15.219
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FPmwmJjP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:57:15.222
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.FPmwmJjP
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:57:15.222
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:57:15.222
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.FPmwmJjP => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-01-13 13:57:15.462
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
+!SESSION 2019-01-13 13:57:21.035 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/gongtia/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/gongtia/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-01-13 13:58:03.275
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2019-01-13 13:58:04.701
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-01-13 13:58:04.701
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a79da3a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a191f83,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:09.175
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.667
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VMNqyJLM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.668
+!MESSAGE subscribing to classpath changes: sts4.classpath.VMNqyJLM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.669
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.670
+!MESSAGE subsribers = [sts4.classpath.VMNqyJLM]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.670
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.675
+!MESSAGE project src ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.676
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.676
+!MESSAGE Preparing classpath changed notification src
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.677
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.VMNqyJLM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.677
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.680
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:14.680
+!MESSAGE executing callback sts4.classpath.VMNqyJLM src false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 13:58:15.193
+!MESSAGE executing callback sts4.classpath.VMNqyJLM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 14:04:42.802
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VMNqyJLM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 14:04:42.802
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VMNqyJLM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 14:04:42.803
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-01-13 14:04:42.804
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VMNqyJLM => OK
+
+!ENTRY org.eclipse.ui 2 2 2019-01-13 14:04:43.103
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.ui.projectPropertyPage (bundle: org.springframework.ide.eclipse.boot.validation, propertyPage: org.springframework.ide.eclipse.boot.validation.preferences.BootValidationProjectPropertyPage)
